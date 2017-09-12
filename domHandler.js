@@ -13,7 +13,7 @@ const domBuilder = (input) => {
 	
 	for (var i = 0; i < name.length; i++){
 		let string = "";
-		string +=	 `<label class="checkbox-inline"><input type="checkbox" name="${name[i]} " value="${price[i]}">${name[i]}</label>`
+		string +=	 `<label class="checkbox-inline"><input type="checkbox" value="${name[i]}" price="${price[i]}">${name[i]}</label>`
 		finalString += string;
 	}	
 	writeSandwich(finalString);
